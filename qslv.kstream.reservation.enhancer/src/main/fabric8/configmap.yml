@@ -1,0 +1,13 @@
+metadata:
+  name: bs-${project.artifactId}
+data:
+  application.properties: |
+    logging.level.qslv=DEBUG
+    qslv.match-reservation-topic=qks.match.reservation
+    qslv.reservation-by-uuid-topic=qks.reservation.by.uuid
+    qslv.kafka-consumer-properties-path=/deployments/config/kafka-consumer/kafka.properties
+    qslv.kafka-producer-properties-path=/deployments/config/kafka-producer/kafka.properties
+    qslv.kafka-streams-properties-path=/deployments/config/kafka-streams/kafka.properties
+    management.endpoint.health.show-details=always
+    management.endpoint.health.show-components=always
+    
